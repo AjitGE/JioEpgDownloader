@@ -15,6 +15,12 @@ on:
     branches: [ "master" ]
  schedule:
    - cron: '0 0 * * *' # Runs daily at midnight
+ workflow_dispatch:
+    inputs:
+defaults:
+    run:
+      shell: bash
+  
 
 jobs:
   build:
