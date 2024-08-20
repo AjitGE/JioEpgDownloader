@@ -13,11 +13,11 @@ on:
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
- schedule:
+  schedule:
    - cron: '0 0 * * *' # Runs daily at midnight
- workflow_dispatch:
+  workflow_dispatch:
     inputs:
-defaults:
+  defaults:
     run:
       shell: bash
   
